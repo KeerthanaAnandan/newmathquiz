@@ -27,7 +27,7 @@ body {
 
 .welcome_form input {
   background-color: transparent;
-  color: #fff;
+  color: #000;
   font-size: 30px;
   text-align: center;
   border: none;
@@ -138,7 +138,7 @@ body {
 .option:hover {
   cursor: pointer;
   /* background-color: rgba(255, 255, 255, 0.1); */
-  border: 2px solid #7d68f1;
+  border: 2px solid #56a5eb;
   background-color: #56a5eb;
 }
 .option.active {
@@ -164,7 +164,7 @@ body {
 .award_icon {
   display: block;
   font-size: 300px;
-  color: #fff;
+  color: #56a5eb;
 }
 
 .username,
