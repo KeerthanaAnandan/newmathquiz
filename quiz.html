@@ -12,14 +12,21 @@
   <body>
     <div class="wrapper">
       <div class="quiz">
-        <div class="quiz_header">
-          <div id="progressBar">
-            <div id="progressBarFull"></div>
+        <div class="quiz_header hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">
+                Question
+            </p>
+              <div id="progressBar">
+              <div id="progressBarFull"></div>
+              </div>
           </div>
-          <div class="quiz_timer">
+          <div id="hud-item" class="hud-prefix quiz_timer">
             <span class="time">00:00</span>
           </div>
-        </div>
+          </div>
+          <br>
+        
         <div class="quiz_body">
           <div id="questions">
             <!-- <ul class="option_group">
@@ -32,6 +39,7 @@
 
           <button class="btn-next" onclick="next()">Next Question</button>
         </div>
+      </div>
       </div>
     </div>
 

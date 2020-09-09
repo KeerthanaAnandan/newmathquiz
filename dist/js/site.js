@@ -63,8 +63,15 @@ function next() {
 
   const progressBarFull = document.getElementById("progressBarFull");
 
-  progressBarFull.style.width = ` ${(question_count / Max_Questions) * 100}%`;
+  progressBarFull.style.width = ` ${
+    (question_count / Max_Questions) * 100 + 10
+  }%`;
   console.log(progressBarFull.style.width);
+
+  //progress text
+  const progressText = document.getElementById("progressText");
+
+  progressText.innerText = `Question ${question_count}/${Max_Questions}`;
 }
 
 function show(count) {
