@@ -70,7 +70,7 @@ body {
   margin-bottom: 6rem;
 }
 .quiz_body {
-  padding: 30px 30px;
+  padding: 40px 40px;
 }
 /*progresssbar*/
 /*.hud-prefix {
@@ -115,16 +115,49 @@ body {
 
   font-size: 50px;
 }
+/*choice prefix*/
+
+li {
+  display: flex;
+  padding: 10px 10px;
+}
+.choice-prefix {
+  display: flex;
+  padding: 20px 20px;
+  margin-bottom: 0.5rem;
+
+  box-sizing: border-box;
+  background-color: #56a5eb;
+  color: white;
+}
 /*.quiz_body {
   background-color: #ecf0f1;
 }*/
+.option {
+  display: flex;
+  padding: 10px 10px;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
+}
+
+.option:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 05);
+  transition: transform 150ms;
+  transform: translateY(-0.1rem);
+}
 
 .option_group {
   list-style-type: none;
   margin: 30px 0;
+  padding: 0rem;
+  width: 100%;
 }
 
-.option {
+/*.option {
   display: block;
   width: 100%;
   background-color: #fff;
@@ -137,10 +170,10 @@ body {
 
 .option:hover {
   cursor: pointer;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* background-color: rgba(255, 255, 255, 0.1); 
   border: 2px solid #56a5eb;
   background-color: #56a5eb;
-}
+} */
 .option.active {
   background-color: #56a5eb;
   color: #fff;
@@ -171,6 +204,8 @@ body {
 .userpoints,
 .usertime {
   color: #000;
+  font-size: xx-large;
+  font-weight: bolder;
   text-align: center;
   margin-top: 15px;
 }
@@ -206,5 +241,11 @@ body {
   .quiz_timer {
     margin-left: 3px;
     margin-top: 0;
+  }
+  li {
+    padding: 5px 5px;
+  }
+  .award_icon {
+    font-size: 250px;
   }
 }
